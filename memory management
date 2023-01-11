@@ -1,0 +1,38 @@
+memory cell is an electronic circuit that stores one byte of binary information.
+memory management is the process of efficiently allocating, de-alocating and coordinating memory so that all the different processes 
+run smoothly and can optimally access different system resourses.
+stack memory
+when a method is called in python, a stack frame is allocated. 
+this stack frame will handle all the variables of the method. 
+after the method is returned, the stack frame is automatically destroyed.
+heap memory
+all objects and instances variables are stored in the heap memory.
+when a variable is created in pythin. it is stored in private heap which will then allow for allocation and deallocation.
+the heap memory enables these variables to be accessed globally by all your program\s methods. 
+after the variables is returned, the python garbage collector gets to work, the working of which keeps track of all objects in memory.
+Offset address meaning
+Offset address and segment number in c programming language
+Each segment has divided into two parts.
+1. Segment no (4 bit)
+2. Offset address (16 bit)
+ Code area:
+Function pointer can only access code area. Size of this area is always fixed
+and it is read only memory area.
+Definition of variable:
+A variable is named location of data. In other word we can variable is
+container of data.
+Allocator Domains
+All allocating functions belong to one of three different “domains”.
+These domains represent different allocation strategies and are optimized for different purposes. 
+The specific details on how every domain allocates memory or what internal functions each domain calls is considered
+an implementation detail, but for debugging purposes a simplified table can be found at here.
+There is no hard requirement to use the memory returned by the allocation functions belonging to a given domain for only the purposes hinted by
+that domain (although this is the recommended practice).
+ For example, one could use the memory returned by PyMem_RawMalloc() for allocating Python objects or the memory returned by 
+ PyObject_Malloc() for allocating memory for buffers.
+pointers in c
+A pointer is a variable that stores the memory address of another variable as its value.
+A pointer variable points to a data type (like int) of the same type, and is created with the * operator.
+data leak
+data leakage ism the mistaken use of information in the model training process that in reality would not be available at predictable time.
+the result of data leakage is overly optimistic in out-of-sample database.
